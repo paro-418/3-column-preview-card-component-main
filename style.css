@@ -14,40 +14,23 @@ body {
   display: flex;
   flex-direction: column;
 }
-.name {
-  font-family: "Big Shoulders Display", cursive;
-}
 
 .box1 {
   background-color: hsl(31, 77%, 52%);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-.box{
-    border: none;
+.box {
+  border: none;
 }
 .box1 button {
   color: hsl(31, 77%, 52%);
-  background-color: hsl(0, 0%, 95%);
-  margin: 0px 0px 40px 50px;
-  border: 2px solid  hsl(0, 0%, 95%);;
-  padding: 14px 34px;
-  font-size: 15px;
-  border-radius: 50px;
-  font-weight: 700;
 }
 .box2 {
   background-color: hsl(184, 100%, 22%);
 }
 .box2 button {
-  background-color: hsl(0, 0%, 95%);
   color: hsl(184, 100%, 22%);
-  margin: 0px 0px 40px 50px;
-  border: 2px solid  hsl(0, 0%, 95%);;
-  padding: 14px 34px;
-  font-size: 15px;
-  border-radius: 50px;
-  font-weight: 700;
 }
 .box3 {
   background-color: hsl(179, 100%, 13%);
@@ -55,18 +38,20 @@ body {
   border-bottom-right-radius: 8px;
 }
 .box3 button {
-  background-color: hsl(0, 0%, 95%);
   color: hsl(179, 100%, 13%);
-  margin: 0px 0px 40px 50px;
-  border: 2px solid  hsl(0, 0%, 95%);;
+}
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
   padding: 14px 34px;
   font-size: 15px;
   border-radius: 50px;
   font-weight: 700;
+  margin: 0px 0px 40px 50px;
 }
-button:hover{
-    background-color: transparent;
-    color:  hsl(0, 0%, 95%);;
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
 }
 img {
   margin: 40px 0px 35px 50px;
@@ -75,12 +60,63 @@ img {
   color: hsl(0, 0%, 89%);
   margin: 0px 0px 35px 50px;
   font-size: 42px;
+  font-family: "Big Shoulders Display", cursive;
 }
 .para {
-    color: hsla(0, 0%, 100%, 0.55);
-    margin: 0px 0px 30px 50px;
-    padding: 0px 41px 0px 0px;
-    line-height: 26px;
-    font-size: 15px;
-    word-spacing: 2px;
+  color: hsla(0, 0%, 100%, 0.55);
+  margin: 0px 0px 30px 50px;
+  padding: 0px 41px 0px 0px;
+  line-height: 26px;
+  font-size: 15px;
+  word-spacing: 2px;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 1441px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    height: 800px;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    /* border: 2px solid white;*/ 
+    display: flex;
+    flex-direction: row;
+    height: 63%;
+    width: 63%;
+  }
+  .box {
+    border-radius: 0px;
+  }
+  .box1 {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .box3 {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .name {
+    margin: 0px 0px 22px 50px;
+  }
+  .box2 button{
+    margin: 60px 0px 0px 50px;
+
+  }
+  .box1 button,.box3 button {
+    margin: 37px 0px 0px 50px;
+  }
+  button:hover {
+    background-color: transparent;
+  }
+  .para{
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
 }
