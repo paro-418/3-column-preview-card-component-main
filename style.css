@@ -84,8 +84,7 @@ img {
     justify-content: center;
     align-items: center;
   }
-  .container {
-    /* border: 2px solid white;*/ 
+  .container { 
     display: flex;
     flex-direction: row;
     height: 63%;
